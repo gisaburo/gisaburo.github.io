@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Markdown with HTML5</title>
-<div id="content">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TipsNote : GitHub Pages Sample</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
+</head>
 
-# 見出し1
+<body>
+<main>
+  <h1>GitHub Pages のサンプルです</h1>
+  <a href="http://www.tam-tam.co.jp/tipsnote/"><button>TipsNote に戻る</button></a>
+</main>
 
-## 見出し2
-
-### 見出し3
-これは本文です。もちろん[リンク](http://www.google.com)だって使えます。
-** 太字だって **
-
-* 普通にリストも使えるよ
-* すごいね
-
-</div>
-<div id="jscontent">
-<script src="./js/marked.min.js"></script>
 <script>
-var content = document.getElementById("content");
-content.innerHTML = marked(content.innerHTML);
+console.log('GitHub Pages Sample');
 </script>
-</div>
+</body>
+</html>

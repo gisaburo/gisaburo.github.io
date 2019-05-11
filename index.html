@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title</title>
+        <title>Largo Hair Salon</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/uikit.min.css" />
@@ -12,18 +12,26 @@
     <body>
         <div class="uk-section uk-section-xsmall uk-section-primary">
             <div class="uk-container uk-container-small">
-                <a class="uk-button uk-button-default" href="#offcanvas-slide" uk-icon="menu" uk-toggle></a>
-                <div id="offcanvas-slide" uk-offcanvas>
+                <button class="uk-button uk-button-default" uk-icon="menu" type="button" uk-toggle="target: #offcanvas-nav"></button>
+                <div id="offcanvas-nav" uk-offcanvas="overlay: true">
                     <div class="uk-offcanvas-bar">
+
                         <ul class="uk-nav uk-nav-default">
                             <li class="uk-active"><a href="#">Active</a></li>
-                            <li><a href="#">Item</a></li>
+                            <li class="uk-parent">
+                                <a href="#">Parent</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="#">Sub item</a></li>
+                                    <li><a href="#">Sub item</a></li>
+                                </ul>
+                            </li>
                             <li class="uk-nav-header">Header</li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
+                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
                             <li class="uk-nav-divider"></li>
-                            <li><a href="#">Item</a></li>
+                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
                         </ul>
+
                     </div>
                 </div>
             </div>
